@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="openspace.css" rel="stylesheet">
+    <title>Open Space</title>
+    <script async src="openspace.js"></script>
+</head>
+<body>
+<div class="space">
+    <div class="planet-area">
+        <img class="planet" src="https://stepik.org/media/attachments/lesson/452681/mars.png">
+        <img class="rocket" id="rocket" src="https://stepik.org/media/attachments/lesson/452681/rocket.png">
+    </div>
+    <div class="control-panel">
+        <div class="control-panel__inner">
+            <input type="password" placeholder="Enter your password" id="password">
+            <input type="button" value="ok" id="ok">
+            <div class="check-buttons" id="check-buttons">
+                <input type="checkbox" disabled onchange="launchAble()">
+                <input type="checkbox" disabled onchange="launchAble()">
+                <input type="checkbox" disabled onchange="launchAble()">
+                <input type="checkbox" disabled onchange="launchAble()">
+                <input type="checkbox" disabled onchange="launchAble()">
+                <input type="checkbox" disabled onchange="launchAble()">
+            </div>
+            <div class="levers" id="levers">
+                <input type="range" min="0" max="100" step="100" value="0" disabled onchange="launchAble()">
+                <input type="range" min="0" max="100" step="100" value="0" disabled onchange="launchAble()">
+                <input type="range" min="0" max="100" step="100" value="0" disabled onchange="launchAble()">
+                <input type="range" min="0" max="100" step="100" value="0" disabled onchange="launchAble()">
+                <input type="range" min="0" max="100" step="100" value="0" disabled onchange="launchAble()">
+            </div>
+            <input type="button" value="launch" id="launch" disabled>
+        </div>
+    </div>
+</div>
+</body>
+</html>

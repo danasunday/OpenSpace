@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+}
+
+.space {
+    position: relative;
+    margin-left: 300px;
+    width: 900px;
+    height: 900px;
+    background-image: url("https://stepik.org/media/attachments/lesson/452681/space.png");
+    overflow: hidden;
+}
+
+.planet-area {
+    position: relative;
+    top: 520px;
+    width: 600px;
+    height: 700px;
+    /* border: 3px solid white; */
+    overflow: visible;
+}
+
+.planet {
+    position: relative;
+    top: 50px;
+    left: -30px;
+    width: 400px;
+    height: auto;
+    z-index: 2;
+    overflow: visible;
+}
+
+.rocket {
+    position: relative;
+    left: -190px;
+    top: -150px;
+    height: 150px;
+    z-index: 1;
+    transform: rotate(27deg);
+}
+
+.control-panel__inner {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    width: 300px;
+    height: 250px;
+    z-index: 2;
+    border: 1px #3E92CC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(120deg, #1CB5E0 0%, #000851 100%);
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(120deg, #1CB5E0 0%, #000851 100%);
+}
+
+input[type="password"] {
+    border: 2px dotted #3E92CC;
+    border-radius: 20px;
+    width: 150px;
+    color: grey;
+    height: 24px;
+    align-self: flex-end;
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 30px;
+    align-self: flex-end;
+    animation: 3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #023e8a;
+    color: white;
+}
+
+/* input[type="button"]:focus {
+  background-color: #023e8a;
+  color: #f72585;
+} */
+
+input[type="button"][value="launch"] {
+    border-radius: 50%;
+    background-color: #3E92CC;
+    border: none;
+    align-self: center;
+}
+
+input[type="button"][value="ok"] {
+    border-radius: 20px;
+    background-color: #3E92CC;
+    border: none;
+}
+
+.check-buttons {
+    height: 50px;
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.levers {
+    width: inherit;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input[type="range"] {
+    transform: rotate(270deg);
+    width: 50px;
+    margin-left: 8px;
+}
